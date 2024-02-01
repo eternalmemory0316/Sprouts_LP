@@ -41,10 +41,9 @@ body{
 }
 .banner_font{
     text-align: center;
-    font-size: 30px;
+    font-size: 18px;
     font-family: ui-monospace;
-    text-shadow:-2px 1px 0px #FFB650, 4px 4px 0px #FFD662, 5px 3px 0px #FF80BF;
-            
+    text-shadow: -2px 1px 0px #b18e5c47, 4px 4px 0px #ffd66200;
 }
 .banner .sprouts{
     display: flex;
@@ -53,6 +52,7 @@ body{
 }
 .banner .sprouts img{
     border-radius: 15px;
+    width: 100px;  
 }
 .banner .female{
     margin-top: 63px;
@@ -159,7 +159,7 @@ article div{
 .article_title_animation{
     animation-name: article_content_title;
     animation-duration: 2s;
-    /* animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
 }
   @keyframes article_content_title {
     from {color:rgb(74, 243, 8); left:700px; top:0px;}
@@ -271,17 +271,21 @@ article .img{
     background-image: url('./assets/img/last_bottom.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding : 30px 45px 140px 40px;
+    padding : 30px 45px 32px 40px;
 }
 .last_bottom .bottom_first_text{
     font-size: 30px;
     /* width: 70%; */
-    color: rgb(165, 192, 225);
+    color: rgb(84 203 12);
     font-weight: 400;
     font-style: italic;
     text-decoration: underline 2px;
     line-height: 1.7;
     letter-spacing: 2px;
+}
+.bottom_first_text img{
+    width: 50px;
+    border-radius: 10px;
 }
 .bottom_second_text{
     background-size: 50% 100%;
@@ -310,7 +314,7 @@ article .img{
 }
 .bottom_second_text .text_title{
     font-size: 30px;
-    color: rgb(165, 192, 225);
+    color: rgb(84 203 12);
     font-weight: 400;
     font-style: italic;
     text-decoration: underline 2px;
@@ -322,6 +326,9 @@ article .img{
     margin: 100px 0px 50px 10px;
     padding: 10px;
     width: 40%;
+}
+.logo_box img{
+    width: 50px;
 }
 .box_text div{
     background-color: rgb(153 137 74);;
@@ -404,7 +411,7 @@ article .img{
     text-align: center;
     display: flex;
     flex-direction: column;
-    row-gap: 70px;
+    row-gap: 20px;
 }
 .price_banner_font{
     color: rgb(80 229 217);
@@ -455,6 +462,7 @@ article .img{
     background-color: #fff;
     padding: 30px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     row-gap: 50px;
     background-image: url('./assets/img/price_num_back.png');
@@ -470,6 +478,7 @@ article .img{
 }
 .price_text{
     display: flex;
+    align-items: center;
     flex-direction: column;
     row-gap: 30px;
     padding: 15px;
@@ -484,7 +493,7 @@ article .img{
 }
 .pr_name_jp{
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'alex-brush';
     text-align: center;
     color: rgb(103 173 5);
@@ -514,11 +523,17 @@ article .img{
     column-gap: 20px;
 }
 .clearfix {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #footer .footer_contents {
     width: 280px;
     float: left;
+}
+.ads img{
+    width: 100px;
 }
 @media screen and (max-width: 1200px){
     #footer_inner {
@@ -570,16 +585,18 @@ article .img{
         line-height:2; 
     }
     article .img img{
-        width: 200px;
+        width: 350px;
     }
     .article .CBD {
         padding: 3px 6px;
         border-radius: 15px;
         font-size: 16px;
         letter-spacing: 2px;
+        display: flex;
+        align-items: center;
     }
     .ads img{
-        display:none;
+        width: 80px;
     }
     .span_word_red {
         font-size: 14px;
@@ -637,7 +654,7 @@ article .img{
     }
     
     .last .last_bottom {
-        padding: 30px 45px 233px 40px;
+        padding: 30px 45px 45px 40px;
     }
     .price_banner_first img{
         width: 170px;
@@ -651,7 +668,7 @@ article .img{
         height: 146px;
     }
     .pr_name_jp {
-        font-size: 23px;
+        font-size: 15px;
     }
     .font_price{
         font-size: 30px;
@@ -688,6 +705,10 @@ article .img{
     .last_bottom .bottom_first_text {
         font-size: 24px;
     }
+    .bottom_first_text img{
+        width: 50px;
+        border-radius: 5px;
+    }
     .bottom_second_text img {
         left: 165px;
         top: 120px;
@@ -711,7 +732,7 @@ article .img{
         column-gap: 20px;
     }
     .price_content img {
-        width: 82px;
+        width: 106px;
         height: 95px;
     }
     .price_banner_part2{
@@ -727,20 +748,23 @@ article .img{
     .banner_font {
         margin-top: 30px;
     }
+    .ads img{
+        width: 50px;
+    }
 
 }
 @media screen and (max-width: 470px){
     .content{
-        width : 304px;
+        width : 370px;
         margin: auto;
     }
     .first{
-        width : 264px;
+        width : 320px;
         height: 375px;
         margin: auto;
     }
     .last{
-        width : 304px;
+        width : 370px;
     }
     .last .last_top .large_text {
         font-size: 14px;
@@ -754,11 +778,11 @@ article .img{
         font-size: 29px;
     }
     .bottom_second_text img {
-        left: 130px;
-        top: 131px;
+        left: 155px;
+        top: 118px;
     }
     .last .last_bottom {
-        padding: 30px 13px 233px 19px;
+        padding: 30px 13px 45px 19px;
     }
     .last_bottom .box_text {
         margin: 41px 0px 50px -3px;
